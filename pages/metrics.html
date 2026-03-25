@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metric Glossary — Ten Thousand Playbook</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Metric Glossary</h1>
+  <p class="page-desc">Quick reference for every metric used across the Ten Thousand account. If you see a number in a report and don't know what it means, start here.</p>
+</div>
+
+<div class="mockup">
+  <div class="mockup-header">Definitions</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Metric</th>
+        <th>Formula</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold">Gross Revenue</td>
+        <td>Shopify gross sales</td>
+        <td>Includes shipping + tax</td>
+      </tr>
+      <tr>
+        <td class="bold">Net Revenue</td>
+        <td>Gross &minus; discounts &minus; returns &minus; shipping &minus; tax</td>
+        <td>Proxy for net demand / net sales</td>
+      </tr>
+      <tr>
+        <td class="bold">Marketing Spend (Total)</td>
+        <td>All media + Affiliate + Ambassador + Agency Fees + Other</td>
+        <td>The denominator for ROMS</td>
+      </tr>
+      <tr>
+        <td class="bold">Gross ROMS</td>
+        <td>Gross Revenue / Total Marketing Spend</td>
+        <td>Business-level efficiency. Uses Shopify revenue, not platform-reported.</td>
+      </tr>
+      <tr>
+        <td class="bold">Net ROMS</td>
+        <td>Net Revenue / Total Marketing Spend</td>
+        <td>The metric that matters most. "Are we making money?"</td>
+      </tr>
+      <tr>
+        <td class="bold">ROAS</td>
+        <td>Platform-reported Revenue / Platform Media Spend</td>
+        <td>Channel-level metric. Used for in-platform optimization, not business truth.</td>
+      </tr>
+      <tr>
+        <td class="bold">Blended pCPA</td>
+        <td>Total Marketing Spend / New Customers (Shopify)</td>
+        <td>All-in cost to acquire a new customer. Target: &le;$50.</td>
+      </tr>
+      <tr>
+        <td class="bold">Evergreen-only pCPA</td>
+        <td>(Total Marketing Spend &minus; Experimental Spend) / New Customers (Shopify)</td>
+        <td>What pCPA would be without experimental spend. Same Shopify new customer denominator &mdash; we never attribute customers to specific campaigns. Only the spend numerator changes.</td>
+      </tr>
+      <tr>
+        <td class="bold">New Customer</td>
+        <td>Shopify order where customer.orders_count = 1</td>
+        <td>First-time purchaser on order date.</td>
+      </tr>
+      <tr>
+        <td class="bold">New Customer %</td>
+        <td>New Customers / Total Orders &times; 100</td>
+        <td>Currently ~34% of orders are new customers.</td>
+      </tr>
+      <tr>
+        <td class="bold">AOV</td>
+        <td>Revenue / Orders</td>
+        <td>Currently ~$140 gross, $147 net per order.</td>
+      </tr>
+      <tr>
+        <td class="bold">WoW Delta</td>
+        <td>(This Week &minus; Last Week) / Last Week &times; 100</td>
+        <td>Week-over-week change.</td>
+      </tr>
+      <tr>
+        <td class="bold">vs. 5 Wk Avg</td>
+        <td>(This Week &minus; 5 Week Avg) / 5 Week Avg &times; 100</td>
+        <td>Signal vs. noise &mdash; is this week unusual or trending?</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note">
+  <strong>Key distinction:</strong> ROAS is what the ad platform tells you. ROMS is what Shopify tells you. When they disagree, trust Shopify. Always.
+</div>
+
+<div class="footer">
+  <p>Prepared by Red Krypton x Archer. Balaji Bhat. March 20, 2026</p>
+</div>
+
+<script src="../layout.js"></script>
+<script>initLayout('metrics');</script>
+</body>
+</html>

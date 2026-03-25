@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Sources — Ten Thousand Playbook</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="page-header">
+  <span class="priority p1">Required</span>
+  <h1>Data Sources &amp; Connections</h1>
+  <p class="page-desc">Where data comes from, what each source provides, and current connection status.</p>
+</div>
+
+<div class="mockup">
+  <div class="mockup-header">Data Connections</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>What It Provides</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold">Shopify</td>
+        <td>Gross Revenue, Net Revenue, Orders, New vs. Returning, AOV</td>
+        <td class="neg">Broken &mdash; needs fix</td>
+        <td>This unblocks Views 1, 2, 3, 5, 6. Top priority.</td>
+      </tr>
+      <tr>
+        <td class="bold">Google Ads API</td>
+        <td>Campaign spend, impressions, clicks, conversions, revenue, campaign names</td>
+        <td class="pos">Connected</td>
+        <td>Need campaign name parsing for bucket + Evergreen/Experimental tags</td>
+      </tr>
+      <tr>
+        <td class="bold">Meta Ads API</td>
+        <td>Campaign spend, impressions, clicks, conversions, revenue, campaign names</td>
+        <td class="pos">Connected (paused)</td>
+        <td>Currently paused. Will resume soon &mdash; need ramp-up tagging plan.</td>
+      </tr>
+      <tr>
+        <td class="bold">Snap Ads API</td>
+        <td>Campaign spend, impressions, clicks, conversions, campaign names</td>
+        <td class="pos">Connected</td>
+        <td>All Snap campaigns are Experimental for now.</td>
+      </tr>
+      <tr>
+        <td class="bold">Manual Input Table</td>
+        <td>Agency fees, Affiliate spend, Ambassador spend (daily or weekly)</td>
+        <td class="neg">Needs creation</td>
+        <td>Simple form or Google Sheet connection. These don't come from APIs.</td>
+      </tr>
+      <tr>
+        <td class="bold">Goals Table</td>
+        <td>Monthly spend goal, revenue goal, pCPA goal ($50)</td>
+        <td class="neg">Needs creation</td>
+        <td>Simple table: month, spend_goal, revenue_goal, pcpa_goal. Updated monthly.</td>
+      </tr>
+      <tr>
+        <td class="bold">Campaign &rarr; Bucket Mapping</td>
+        <td>Which campaign belongs to which strategic bucket</td>
+        <td class="neg">Needs creation</td>
+        <td>Start with auto-detection rules, manual override table for edge cases.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>Prepared by Red Krypton x Archer. Balaji Bhat. March 20, 2026</p>
+</div>
+
+<script src="../layout.js"></script>
+<script>initLayout('data-sources');</script>
+</body>
+</html>

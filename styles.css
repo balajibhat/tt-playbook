@@ -1,0 +1,311 @@
+/* Ten Thousand — Team Ops Playbook | Design System */
+:root {
+  --bg: #0f1117;
+  --card: #1a1d27;
+  --border: #2a2d3a;
+  --text: #e4e4e7;
+  --muted: #8b8d97;
+  --green: #22c55e;
+  --red: #ef4444;
+  --amber: #f59e0b;
+  --blue: #3b82f6;
+  --purple: #a855f7;
+  --cyan: #06b6d4;
+  --sidebar-w: 260px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ── Layout ─────────────────────────────────────────── */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-w);
+  background: #13151c;
+  border-right: 1px solid var(--border);
+  padding: 24px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.sidebar-brand h1 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.sidebar-brand .badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--amber);
+  background: #f59e0b15;
+  border: 1px solid #f59e0b30;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.sidebar nav { padding: 0 12px; }
+
+.nav-section {
+  margin-bottom: 20px;
+}
+
+.nav-section-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  padding: 0 8px;
+  margin-bottom: 6px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+  background: #1a1d27;
+}
+
+.nav-link.active {
+  color: var(--text);
+  background: #1e2130;
+  border: 1px solid var(--border);
+}
+
+.nav-link .nav-icon {
+  width: 18px;
+  text-align: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Main content */
+.main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  padding: 48px 56px;
+  max-width: 960px;
+}
+
+.page-header {
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.page-header .page-desc {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 680px;
+}
+
+/* ── Reusable Components ────────────────────────────── */
+h2 { font-size: 20px; font-weight: 600; margin-bottom: 6px; margin-top: 48px; }
+h2:first-of-type { margin-top: 0; }
+h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; margin-top: 32px; }
+
+.section { margin-bottom: 48px; }
+.section-desc { color: var(--muted); font-size: 14px; margin-bottom: 20px; max-width: 800px; }
+
+/* Priority badge */
+.priority { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+.p1 { background: #dc262620; color: var(--red); border: 1px solid #dc262640; }
+.p2 { background: #f59e0b20; color: var(--amber); border: 1px solid #f59e0b40; }
+.p3 { background: #3b82f620; color: var(--blue); border: 1px solid #3b82f640; }
+
+/* Logic box */
+.logic-box { background: #1e2130; border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin: 16px 0 24px 0; font-size: 13px; }
+.logic-box code { background: #2a2d3a; padding: 2px 6px; border-radius: 4px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; color: var(--cyan); }
+.logic-box .label { color: var(--amber); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: block; }
+
+/* Tables / mockups */
+.mockup { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 16px 0 24px 0; }
+.mockup-header { background: #22252f; padding: 10px 16px; font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+.mockup-header .tag { font-size: 10px; background: #3b82f620; color: var(--blue); padding: 2px 8px; border-radius: 8px; text-transform: none; letter-spacing: 0; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 10px 14px; color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border); background: #1e2130; }
+td { padding: 10px 14px; border-bottom: 1px solid #1e2130; }
+tr:last-child td { border-bottom: none; }
+
+.num { text-align: right; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; }
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+.warn { color: var(--amber); }
+.dim { color: var(--muted); }
+.bold { font-weight: 600; }
+
+/* KPI cards */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 16px 0 24px 0; }
+.kpi-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.kpi-card .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.kpi-card .kpi-value { font-size: 24px; font-weight: 700; font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+/* Tag chips */
+.tag-chip { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; margin: 2px 4px 2px 0; }
+.tag-evergreen { background: #22c55e18; color: var(--green); border: 1px solid #22c55e30; }
+.tag-experimental { background: #f59e0b18; color: var(--amber); border: 1px solid #f59e0b30; }
+
+/* Bucket cards */
+.bucket-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+.bucket-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.bucket-card h4 { font-size: 14px; margin-bottom: 4px; }
+.bucket-card .strategy { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.bucket-card .metric-list { font-size: 12px; }
+.bucket-card .metric-list span { color: var(--cyan); }
+
+/* Notes */
+.note { background: #3b82f610; border-left: 3px solid var(--blue); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 13px; }
+.note.warn { background: #f59e0b10; border-left-color: var(--amber); }
+.note.green { background: #22c55e10; border-left-color: var(--green); }
+
+.divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+
+/* Naming / grid boxes */
+.naming-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+.naming-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.naming-box h4 { font-size: 13px; margin-bottom: 10px; }
+
+.campaign-name { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; background: #2a2d3a; padding: 4px 8px; border-radius: 4px; display: inline-block; margin: 2px 0; }
+
+/* Footer */
+.footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12px; }
+
+/* ── Index page cards ───────────────────────────────── */
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.page-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.15s ease;
+  display: block;
+}
+
+.page-card:hover {
+  border-color: #3a3d4a;
+  background: #1e2130;
+  transform: translateY(-1px);
+}
+
+.page-card .card-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.page-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.page-card p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.page-card .card-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+/* ── Mobile / responsive ────────────────────────────── */
+.mobile-header {
+  display: none;
+  background: #13151c;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-header h1 { font-size: 14px; font-weight: 600; }
+
+.menu-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .mobile-header { display: flex; }
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+  .sidebar.open { transform: translateX(0); }
+  .main {
+    margin-left: 0;
+    padding: 80px 20px 40px;
+  }
+  .page-grid { grid-template-columns: 1fr; }
+  .bucket-grid { grid-template-columns: 1fr; }
+  .naming-grid { grid-template-columns: 1fr; }
+}

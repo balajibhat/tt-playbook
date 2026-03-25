@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Triage — Ten Thousand Playbook</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="page-header">
+  <span class="priority p1">Operational</span>
+  <h1>Creative Performance Triage</h1>
+  <p class="page-desc">Not every ad needs to drive purchases to be valuable. Some ads fill the remarketing pool with warm audiences that convert later through other ads. This framework gives Jackie and Devesh a shared language for evaluating creative.</p>
+</div>
+
+<div class="note">
+  <strong>Core principle:</strong> An ad's job depends on where it lives in the funnel. A top-of-funnel ad that generates massive engagement but zero direct purchases is doing its job &mdash; it's filling your retargeting pools. Killing it because "ROAS is low" starves the funnel. Judge each ad by the right metric for its role.
+</div>
+
+<!-- THE 4 BUCKETS -->
+<h2>The 4 Buckets</h2>
+
+<div class="bucket-grid">
+  <div class="bucket-card" style="border-top: 3px solid var(--green);">
+    <h4 style="color: var(--green);">1. Winners</h4>
+    <div class="strategy">High purchases, strong ROAS. The money-makers.</div>
+    <div class="metric-list" style="margin-top: 8px;">
+      <strong>Signals:</strong><br>
+      <span>Purchases &ge; 3 in last 7 days</span><br>
+      <span>ROAS &ge; 2.0x (prospecting) or &ge; 4.0x (retargeting)</span><br>
+      <span>CPA at or below target</span><br>
+      <span>CTR stable or improving WoW</span>
+    </div>
+    <div style="margin-top: 10px; font-size: 12px;">
+      <strong style="color: var(--green);">Action: SCALE.</strong> Increase budget 10-20% every 3-4 days. Produce 2-3 variations of winning hook/format to extend lifespan. Move to main scaling campaign if still in testing.
+    </div>
+  </div>
+
+  <div class="bucket-card" style="border-top: 3px solid var(--purple);">
+    <h4 style="color: var(--purple);">2. Engagement Drivers (Top-of-Funnel Fuel)</h4>
+    <div class="strategy">High engagement, low direct purchases. Fills the remarketing pool.</div>
+    <div class="metric-list" style="margin-top: 8px;">
+      <strong>Signals:</strong><br>
+      <span>Shares &ge; 10 or Saves &ge; 15 in last 7 days</span><br>
+      <span>Post engagement rate &ge; 3%</span><br>
+      <span>Video: ThruPlay rate &ge; 15% or 3-second view rate &ge; 50%</span><br>
+      <span>Low or zero direct purchases &mdash; and that's okay</span><br>
+      <span>Audience growth: driving profile visits, follows, page engagement</span>
+    </div>
+    <div style="margin-top: 10px; font-size: 12px;">
+      <strong style="color: var(--purple);">Action: KEEP RUNNING.</strong> Do NOT kill these based on ROAS alone. They are feeding the remarketing pools that your Winners then close. Budget these separately &mdash; they are an investment in future conversions.
+    </div>
+  </div>
+
+  <div class="bucket-card" style="border-top: 3px solid var(--red);">
+    <h4 style="color: var(--red);">3. Underperformers</h4>
+    <div class="strategy">Low engagement AND low conversions. Burning cash for nothing.</div>
+    <div class="metric-list" style="margin-top: 8px;">
+      <strong>Signals:</strong><br>
+      <span>CTR &lt; 0.5% after 5,000+ impressions</span><br>
+      <span>Zero purchases after spend &ge; 3x target CPA</span><br>
+      <span>Shares + Saves &lt; 5 total</span><br>
+      <span>Video: 3-second view rate &lt; 25%</span><br>
+      <span>No engagement momentum &mdash; flat or declining</span>
+    </div>
+    <div style="margin-top: 10px; font-size: 12px;">
+      <strong style="color: var(--red);">Action: KILL.</strong> Pause immediately. Don't iterate &mdash; the hook failed. Analyze why and apply learnings to the next creative batch.
+    </div>
+  </div>
+
+  <div class="bucket-card" style="border-top: 3px solid var(--amber);">
+    <h4 style="color: var(--amber);">4. Fatiguing Creative</h4>
+    <div class="strategy">Were Winners or Engagement Drivers, now declining.</div>
+    <div class="metric-list" style="margin-top: 8px;">
+      <strong>Signals:</strong><br>
+      <span>Frequency &ge; 5 (prospecting) or &ge; 8 (retargeting)</span><br>
+      <span>CTR declining &ge; 20% WoW for 2+ consecutive weeks</span><br>
+      <span>CPA rising &ge; 30% above its historical average</span><br>
+      <span>Engagement metrics (shares, saves) dropping off</span><br>
+      <span>CPM increasing without corresponding performance lift</span>
+    </div>
+    <div style="margin-top: 10px; font-size: 12px;">
+      <strong style="color: var(--amber);">Action: ROTATE.</strong> Don't wait until it dies &mdash; rotate proactively. Produce a variation with a new hook but same winning format/angle. If the variation also fades quickly, the audience is saturated.
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- DECISION MATRIX -->
+<h2>Decision Matrix: How to Classify Any Ad</h2>
+
+<div class="mockup">
+  <div class="mockup-header">
+    Creative Triage Matrix &mdash; Run This Weekly
+    <span class="tag">Jackie + Devesh</span>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 100px;">Step</th>
+        <th>Question</th>
+        <th style="width: 120px;">If YES</th>
+        <th style="width: 120px;">If NO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold">1</td>
+        <td>Has this ad spent at least 3x target CPA ($150+)?</td>
+        <td>Continue to Step 2</td>
+        <td class="dim">Too early &mdash; let it run.</td>
+      </tr>
+      <tr>
+        <td class="bold">2</td>
+        <td>Does it have &ge;3 purchases in the last 7 days with ROAS &ge; 2x?</td>
+        <td class="pos bold">WINNER &rarr; Scale</td>
+        <td>Continue to Step 3</td>
+      </tr>
+      <tr>
+        <td class="bold">3</td>
+        <td>Does it have strong engagement? (Shares &ge;10, Saves &ge;15, or engagement rate &ge;3%)</td>
+        <td style="color: var(--purple);" class="bold">ENGAGEMENT DRIVER &rarr; Keep</td>
+        <td>Continue to Step 4</td>
+      </tr>
+      <tr>
+        <td class="bold">4</td>
+        <td>Was it previously a Winner or Engagement Driver but metrics are declining &ge;20% WoW?</td>
+        <td class="warn bold">FATIGUING &rarr; Rotate</td>
+        <td class="neg bold">UNDERPERFORMER &rarr; Kill</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="logic-box">
+  <span class="label">Where to find these metrics</span>
+  <strong>Meta Ads Manager columns to add:</strong><br>
+  <code>Purchases</code>, <code>Purchase ROAS</code>, <code>Cost per Purchase</code>, <code>CTR (link click-through rate)</code>, <code>Post Engagement</code>, <code>Post Shares</code>, <code>Post Saves</code>, <code>ThruPlay Rate</code>, <code>Video 3-Second Views</code>, <code>Frequency</code>, <code>CPM</code><br><br>
+  <strong>Google Ads (for Demand Gen / Video):</strong><br>
+  <code>Conversions</code>, <code>Conv. Value / Cost</code>, <code>Engagement Rate</code>, <code>Video View Rate (VCR)</code>, <code>Avg. CPV</code>, <code>Impressions</code><br><br>
+  <strong>Snap Ads:</strong><br>
+  <code>Swipe Ups</code>, <code>Shares</code>, <code>Saves</code>, <code>Video Views (complete)</code>, <code>eCPSU (cost per swipe up)</code><br><br>
+  <strong>Cadence:</strong> Run this triage every Monday morning. Jackie reviews creative quality (hooks, formats, angles). Devesh reviews the numbers. Together, classify each active ad and decide actions for the week.
+</div>
+
+<hr class="divider">
+
+<!-- REMARKETING FLYWHEEL -->
+<h2>How Engagement Drivers Feed Winners</h2>
+
+<div class="mockup">
+  <div class="mockup-header">The Remarketing Flywheel</div>
+  <div style="padding: 24px; font-size: 13px;">
+    <div style="display: flex; gap: 16px; align-items: stretch;">
+      <div style="flex: 1; background: #a855f715; border: 1px solid #a855f730; border-radius: 8px; padding: 16px;">
+        <div style="font-weight: 600; color: var(--purple); margin-bottom: 8px;">ENGAGEMENT DRIVER (Top of Funnel)</div>
+        <div style="color: var(--muted); font-size: 12px;">
+          Viral-style content, athlete stories, product education, lifestyle videos.<br><br>
+          <strong>Creates these audiences:</strong>
+          <ul style="margin: 4px 0 0 16px;">
+            <li>Video viewers (25%/50%/75%/95% watched)</li>
+            <li>Post engagers (liked, commented, shared)</li>
+            <li>Page/profile visitors</li>
+            <li>Post savers (high-intent signal)</li>
+            <li>Website visitors (if clicks through)</li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; color: var(--muted); font-size: 20px; padding: 0 4px;">&rarr;</div>
+      <div style="flex: 1; background: #22c55e15; border: 1px solid #22c55e30; border-radius: 8px; padding: 16px;">
+        <div style="font-weight: 600; color: var(--green); margin-bottom: 8px;">WINNER (Retargeting)</div>
+        <div style="color: var(--muted); font-size: 12px;">
+          Product-focused ads, offers, social proof, urgency.<br><br>
+          <strong>Retargets these people:</strong>
+          <ul style="margin: 4px 0 0 16px;">
+            <li>75%+ video viewers (high intent)</li>
+            <li>Post engagers from last 30 days</li>
+            <li>Savers (strongest organic intent signal)</li>
+            <li>Website visitors who didn't purchase</li>
+            <li>Cart abandoners</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 16px; color: var(--muted); font-size: 12px; text-align: center;">
+      <strong>Kill the Engagement Driver &rarr; Retargeting pools shrink &rarr; Winner CPA rises &rarr; Everything gets more expensive.</strong><br>
+      This is why you never judge an Engagement Driver by its direct ROAS. Its value shows up in the Winner's performance.
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- TT EXAMPLES -->
+<h2>Applied to Ten Thousand</h2>
+
+<div class="mockup">
+  <div class="mockup-header">Example Creative by Bucket</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Bucket</th>
+        <th>What It Might Look Like for TT</th>
+        <th>Where It Runs</th>
+        <th>Don't Judge It By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span style="color: var(--green);" class="bold">Winner</span></td>
+        <td>Product showcase of Interval Shorts with price, "Shop Now" CTA, customer review overlay, urgency copy</td>
+        <td>Meta retargeting, Google Shopping, PMax</td>
+        <td>Engagement (shares/saves will be low &mdash; that's fine)</td>
+      </tr>
+      <tr>
+        <td><span style="color: var(--purple);" class="bold">Engagement Driver</span></td>
+        <td>Athlete story: "How I trained for a Spartan Race in 10,000 gear." High production value, emotional arc.</td>
+        <td>Meta prospecting, Demand Gen, Snap</td>
+        <td>Direct ROAS (its job is reach + pool building)</td>
+      </tr>
+      <tr>
+        <td><span style="color: var(--red);" class="bold">Underperformer</span></td>
+        <td>Generic lifestyle image, no clear product focus, weak copy. Low CTR, no engagement, no conversions.</td>
+        <td>Anywhere &mdash; but it shouldn't be</td>
+        <td>Nothing &mdash; just kill it</td>
+      </tr>
+      <tr>
+        <td><span style="color: var(--amber);" class="bold">Fatiguing</span></td>
+        <td>The Interval Shorts ad that crushed it for 3 weeks but frequency is now 6.2 and CTR dropped 35%.</td>
+        <td>Still in scaling campaign &mdash; needs rotation</td>
+        <td>Last week's numbers &mdash; look at the trend</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="divider">
+
+<!-- HOOK FRAMEWORK -->
+<h2>Creating Engagement Drivers: Hook Framework</h2>
+<p class="section-desc">From the CDE Video Content KB. Every hook must align visual + text + spoken elements. If the viewer sees one thing, reads another, and hears a third &mdash; the hook fails.</p>
+
+<div class="naming-grid">
+  <div class="naming-box">
+    <h4 style="color: var(--purple);">Storytelling Hooks</h4>
+    <p style="font-size: 12px; color: var(--muted); margin-bottom: 8px;">Transformation narratives. Best for athlete stories, brand moments.</p>
+    <div style="font-size: 12px;">
+      "This is the story of how I went from [problem] to [solution]"<br>
+      "I thought I knew everything about [training], but I was so wrong"<br>
+      "If I had to start [fitness journey] all over again"<br>
+      "I almost gave up... until this happened"
+    </div>
+  </div>
+  <div class="naming-box">
+    <h4 style="color: var(--amber);">Scroll-Stopping Hooks</h4>
+    <p style="font-size: 12px; color: var(--muted); margin-bottom: 8px;">Curiosity gaps and urgency. Best for product reveals, feature highlights.</p>
+    <div style="font-size: 12px;">
+      "Here's what no one tells you about [workout gear]"<br>
+      "Watch this before you waste money on [cheap shorts]"<br>
+      "The secret to [training comfort] that no one's sharing"<br>
+      "This changes everything about [workout apparel]"
+    </div>
+  </div>
+  <div class="naming-box">
+    <h4 style="color: var(--red);">Negative / Counter-Narrative Hooks</h4>
+    <p style="font-size: 12px; color: var(--muted); margin-bottom: 8px;">Debunking and warnings. Best for competitive positioning.</p>
+    <div style="font-size: 12px;">
+      "The biggest mistake I see with [workout shorts]"<br>
+      "Stop believing this lie about [athletic wear]"<br>
+      "If you keep wearing [cheap gear], you'll regret it"<br>
+      "Here's why your [current shorts] are holding you back"
+    </div>
+  </div>
+  <div class="naming-box">
+    <h4 style="color: var(--cyan);">Testing Priority (from Meta KB)</h4>
+    <p style="font-size: 12px; color: var(--muted); margin-bottom: 8px;">Test variables in this order for maximum signal.</p>
+    <div style="font-size: 12px;">
+      <strong>1. Hook</strong> (first 3 sec) &mdash; 30-50% CTR lift<br>
+      <strong>2. Format</strong> (UGC vs polished vs carousel) &mdash; 20-40% lift<br>
+      <strong>3. Offer</strong> (discount vs free shipping vs bonus) &mdash; 15-30% lift<br>
+      <strong>4. CTA</strong> ("Shop Now" vs "Learn More") &mdash; 5-15% lift<br>
+      <strong>5. Angle</strong> (feature vs benefit vs emotional) &mdash; 20-40% lift<br><br>
+      <em>Test one variable at a time. Min 3 variations per test. Run 7-14 days.</em>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- GRADUATION AD SET -->
+<h2>Scaling Winners: The Graduation Ad Set</h2>
+<p class="section-desc">When a Winner wins in testing but gets zero spend after moving to the scaling campaign, use this technique before giving up on it.</p>
+
+<div class="logic-box">
+  <span class="label">The Problem</span>
+  You test 4 creatives. All 4 win. You move them to scaling. Meta picks its favorite and starves the other 3 at $10-20/day. Most media buyers kill those ads after a week. <strong>Don't.</strong>
+</div>
+
+<div class="logic-box">
+  <span class="label">The Fix &mdash; Graduation Ad Set</span>
+  <strong>1.</strong> Create a dedicated ad set inside the scaling campaign for "new graduates"<br>
+  <strong>2.</strong> Set a <strong>minimum spend limit at 2-3x your target CPA</strong> ($100-150 for TT)<br>
+  <strong>3.</strong> This forces Meta to deliver on those ads instead of starving them<br>
+  <strong>4.</strong> Once they start generating purchases, Meta begins pushing real spend organically<br>
+  <strong>5.</strong> Move to main scaling ad set once proven, or let CBO redistribute<br><br>
+  <strong>When to cut:</strong> If an ad still can't convert after spending 5-6x CPA ($250-300) in the graduation ad set, it doesn't work in this campaign context. Cut it.<br><br>
+  <span style="color: var(--cyan);">Devesh owns this process.</span> Jackie flags which test winners to graduate. Devesh sets up the ad set and monitors spend.
+</div>
+
+<hr class="divider">
+
+<!-- CREATIVE REFRESH CALENDAR -->
+<h2>Creative Refresh Calendar</h2>
+
+<div class="mockup">
+  <div class="mockup-header">
+    Ongoing Creative Cadence
+    <span class="tag">Jackie leads, Devesh monitors</span>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Cadence</th>
+        <th>Action</th>
+        <th>Who</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="bold">Every Monday</td>
+        <td>Run the 4-bucket triage on all active ads. Classify each as Winner, Engagement Driver, Underperformer, or Fatiguing. Log decisions.</td>
+        <td><span style="color: var(--purple);">Jackie</span> + <span style="color: var(--cyan);">Devesh</span></td>
+      </tr>
+      <tr>
+        <td class="bold">Every 2 weeks</td>
+        <td>Produce 3-5 new ads. At least 1 Engagement Driver-style and 1-2 Winner-style. Test new hooks.</td>
+        <td><span style="color: var(--purple);">Jackie</span> + Patrick's team</td>
+      </tr>
+      <tr>
+        <td class="bold">When frequency hits 5</td>
+        <td>Fatigue alert. Produce a variation with a new hook. Pause original, launch variation.</td>
+        <td><span style="color: var(--cyan);">Devesh</span> (flags) &rarr; <span style="color: var(--purple);">Jackie</span> (produces)</td>
+      </tr>
+      <tr>
+        <td class="bold">Monthly</td>
+        <td>Creative performance review. Which hooks/formats/angles won? Feed insights into next month's roadmap.</td>
+        <td><span style="color: var(--purple);">Jackie</span> + <span style="color: var(--cyan);">Devesh</span> + Balaji</td>
+      </tr>
+      <tr>
+        <td class="bold">When Meta relaunches</td>
+        <td>Prepare 10-15 creatives: mix of proven winners from other channels + new Meta-specific creative.</td>
+        <td><span style="color: var(--purple);">Jackie</span> + <span style="color: var(--cyan);">Devesh</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note warn">
+  <strong>When Patrick asks "why is this ad still running with no ROAS?"</strong> &mdash; The answer is: "This ad generated [X] shares and [Y] saves this week. Our retargeting pool of 75%+ video viewers grew by [Z]. That pool is what our retargeting Winners close at [ROAS]. Killing this ad would shrink that pool and increase our retargeting CPA." Have the numbers ready.
+</div>
+
+<div class="footer">
+  <p>Prepared by Red Krypton x Archer. Balaji Bhat. March 20, 2026</p>
+</div>
+
+<script src="../layout.js"></script>
+<script>initLayout('creative');</script>
+</body>
+</html>
