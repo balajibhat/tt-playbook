@@ -40,6 +40,8 @@ body {
   left: 0;
   bottom: 0;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   z-index: 100;
 }
 
@@ -69,7 +71,7 @@ body {
   margin-top: 6px;
 }
 
-.sidebar nav { padding: 0 12px; }
+.sidebar nav { padding: 0 12px; flex: 1; }
 
 .nav-section {
   margin-bottom: 20px;
